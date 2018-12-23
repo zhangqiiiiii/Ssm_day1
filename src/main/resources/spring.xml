@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
+		">
+
+
+    <!-- 加载小配置文件 db.properties -->
+    <context:property-placeholder location="classpath:db.properties"/>
+
+    <!-- 创建数据库连接池(数据源) -->
+    <bean class="com.alibaba.druid.pool.DruidDataSource" id="dataSource">
+        <property name="driverClassName" value="${jdbc.driver}"></property>
+        <property name="url" value="${jdbc.url}"></property>
+        <property name="username" value="${jdbc.name}"></property>
+        <property name="password" value="${jdbc.password}"></property>
+    </bean>
+
+    <!-- 通过bean标签创建sql工厂对象
+    需要依赖数据源(数据库连接)
+    必须加载映射文件 -->
+    <bean class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- 依赖数据源 -->
+        <property name="dataSource" ref="dataSource">
+        </property>
+        <!-- 给实体类起别名  -->
+        <property name="typeAliasesPackage" value="com.baizhi.entity">
+        </property>
+
+        <!-- 加载dao映射文件 -->
+        <property name="mapperLocations">
+            <list>
+                <value>classpath:mapper/*Mapper.xml</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- 创建dao代理对象 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!-- 创建出来的对象的ID 是接口首字母小写
+        例如: com.baizhi.spring.dao.UserDao===>id=userDao -->
+        <property name="basePackage" value="com.baizhi.dao"></property>
+    </bean>
+
+    <!-- 通过连接池对象创建事务管理器对象 -->
+    <bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager" id="txManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!-- 配置一个事务增强通过事务管理器创建事务增强 -->
+    <tx:advice id="txAdvice" transaction-manager="txManager">
+        <!-- 配置事务,哪些方法需要什么样的事务 -->
+        <tx:attributes>
+            <tx:method name="get*" read-only="true"/>
+            <tx:method name="select*" read-only="true"/>
+            <tx:method name="*" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!-- 配置织入 -->
+    <aop:config>
+        <!-- 通过aop配置切入点 -->
+        <aop:pointcut expression="execution(* com.baizhi.service.*.*(..))" id="sP"/>
+        <!-- 编织切入点和增强 -->
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="sP"/>
+    </aop:config>
+    <context:component-scan base-package="com.baizhi.service"></context:component-scan>
+
+</beans>

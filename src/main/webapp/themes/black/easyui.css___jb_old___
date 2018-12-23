@@ -1,0 +1,415 @@
+package com.baizhi.entity;
+
+import javax.xml.crypto.Data;
+
+public class Product {
+    private Integer book_id;
+    private Integer cid;
+    private String book_name;
+    private Double book_price;
+    private Data groundingDate;
+    private String book_state;
+    private Integer inventory;
+    private String author;
+    private String press;
+    private Integer editNum;
+    private Data print_date;
+    private Integer print_count;
+    private String ISBN;
+    private String word_count;
+    private String page_count;
+    private String style;
+    private String page;
+    private String pack;
+    private Integer salenum;
+    private Double custome_score;
+    private String recommend;
+    private String messages;
+    private String author_msg;
+    private String list;
+    private String media_comment;
+    private String imagePath;
+    private String series_name;
+    private Double Dangprice;
+    private String product_image;
+    private Category category;
+    private String category_name;
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "book_id=" + book_id +
+                ", cid=" + cid +
+                ", book_name='" + book_name + '\'' +
+                ", book_price=" + book_price +
+                ", groundingDate=" + groundingDate +
+                ", book_state='" + book_state + '\'' +
+                ", inventory=" + inventory +
+                ", author='" + author + '\'' +
+                ", press='" + press + '\'' +
+                ", editNum=" + editNum +
+                ", print_date=" + print_date +
+                ", print_count=" + print_count +
+                ", ISBN='" + ISBN + '\'' +
+                ", word_count='" + word_count + '\'' +
+                ", page_count='" + page_count + '\'' +
+                ", style='" + style + '\'' +
+                ", page='" + page + '\'' +
+                ", pack='" + pack + '\'' +
+                ", salenum=" + salenum +
+                ", custome_score=" + custome_score +
+                ", recommend='" + recommend + '\'' +
+                ", messages='" + messages + '\'' +
+                ", author_msg='" + author_msg + '\'' +
+                ", list='" + list + '\'' +
+                ", media_comment='" + media_comment + '\'' +
+                ", imagePath='" + imagePath + '\'' +
+                ", series_name='" + series_name + '\'' +
+                ", Dangprice=" + Dangprice +
+                ", product_image='" + product_image + '\'' +
+                ", category=" + category +
+                ", category_name='" + category_name + '\'' +
+                '}';
+    }
+
+    public String getCategory_name() {
+        return category_name;
+    }
+
+    public void setCategory_name(String category_name) {
+        this.category_name = category_name;
+    }
+
+    public Product(Integer book_id, Integer cid, String book_name, Double book_price, Data groundingDate, String book_state, Integer inventory, String author, String press, Integer editNum, Data print_date, Integer print_count, String ISBN, String word_count, String page_count, String style, String page, String pack, Integer salenum, Double custome_score, String recommend, String messages, String author_msg, String list, String media_comment, String imagePath, String series_name, Double dangprice, String product_image, Category category) {
+        this.book_id = book_id;
+        this.cid = cid;
+        this.book_name = book_name;
+        this.book_price = book_price;
+        this.groundingDate = groundingDate;
+        this.book_state = book_state;
+        this.inventory = inventory;
+        this.author = author;
+        this.press = press;
+        this.editNum = editNum;
+        this.print_date = print_date;
+        this.print_count = print_count;
+        this.ISBN = ISBN;
+        this.word_count = word_count;
+        this.page_count = page_count;
+        this.style = style;
+        this.page = page;
+        this.pack = pack;
+        this.salenum = salenum;
+        this.custome_score = custome_score;
+        this.recommend = recommend;
+        this.messages = messages;
+        this.author_msg = author_msg;
+        this.list = list;
+        this.media_comment = media_comment;
+        this.imagePath = imagePath;
+        this.series_name = series_name;
+        Dangprice = dangprice;
+        this.product_image = product_image;
+        this.category = category;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    public Product() {
+        super();
+    }
+
+    public Product(Integer book_id, Integer cid, String book_name, Double book_price, Data groundingDate, String book_state, Integer inventory, String author, String press, Integer editNum, Data print_date, Integer print_count, String ISBN, String word_count, String page_count, String style, String page, String pack, Integer salenum, Double custome_score, String recommend, String messages, String author_msg, String list, String media_comment, String imagePath, String series_name, Double dangprice, String product_image) {
+        this.book_id = book_id;
+        this.cid = cid;
+        this.book_name = book_name;
+        this.book_price = book_price;
+        this.groundingDate = groundingDate;
+        this.book_state = book_state;
+        this.inventory = inventory;
+        this.author = author;
+        this.press = press;
+        this.editNum = editNum;
+        this.print_date = print_date;
+        this.print_count = print_count;
+        this.ISBN = ISBN;
+        this.word_count = word_count;
+        this.page_count = page_count;
+        this.style = style;
+        this.page = page;
+        this.pack = pack;
+        this.salenum = salenum;
+        this.custome_score = custome_score;
+        this.recommend = recommend;
+        this.messages = messages;
+        this.author_msg = author_msg;
+        this.list = list;
+        this.media_comment = media_comment;
+        this.imagePath = imagePath;
+        this.series_name = series_name;
+        Dangprice = dangprice;
+        this.product_image = product_image;
+    }
+
+    public Integer getBook_id() {
+        return book_id;
+    }
+
+    public void setBook_id(Integer book_id) {
+        this.book_id = book_id;
+    }
+
+    public Integer getCid() {
+        return cid;
+    }
+
+    public void setCid(Integer cid) {
+        this.cid = cid;
+    }
+
+    public String getBook_name() {
+        return book_name;
+    }
+
+    public void setBook_name(String book_name) {
+        this.book_name = book_name;
+    }
+
+    public Double getBook_price() {
+        return book_price;
+    }
+
+    public void setBook_price(Double book_price) {
+        this.book_price = book_price;
+    }
+
+    public Data getGroundingDate() {
+        return groundingDate;
+    }
+
+    public void setGroundingDate(Data groundingDate) {
+        this.groundingDate = groundingDate;
+    }
+
+    public String getBook_state() {
+        return book_state;
+    }
+
+    public void setBook_state(String book_state) {
+        this.book_state = book_state;
+    }
+
+    public Integer getInventory() {
+        return inventory;
+    }
+
+    public void setInventory(Integer inventory) {
+        this.inventory = inventory;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getPress() {
+        return press;
+    }
+
+    public void setPress(String press) {
+        this.press = press;
+    }
+
+    public Integer getEditNum() {
+        return editNum;
+    }
+
+    public void setEditNum(Integer editNum) {
+        this.editNum = editNum;
+    }
+
+    public Data getPrint_date() {
+        return print_date;
+    }
+
+    public void setPrint_date(Data print_date) {
+        this.print_date = print_date;
+    }
+
+    public Integer getPrint_count() {
+        return print_count;
+    }
+
+    public void setPrint_count(Integer print_count) {
+        this.print_count = print_count;
+    }
+
+    public String getISBN() {
+        return ISBN;
+    }
+
+    public void setISBN(String ISBN) {
+        this.ISBN = ISBN;
+    }
+
+    public String getWord_count() {
+        return word_count;
+    }
+
+    public void setWord_count(String word_count) {
+        this.word_count = word_count;
+    }
+
+    public String getPage_count() {
+        return page_count;
+    }
+
+    public void setPage_count(String page_count) {
+        this.page_count = page_count;
+    }
+
+    public String getStyle() {
+        return style;
+    }
+
+    public void setStyle(String style) {
+        this.style = style;
+    }
+
+    public String getPage() {
+        return page;
+    }
+
+    public void setPage(String page) {
+        this.page = page;
+    }
+
+    public String getPack() {
+        return pack;
+    }
+
+    public void setPack(String pack) {
+        this.pack = pack;
+    }
+
+    public Integer getSalenum() {
+        return salenum;
+    }
+
+    public void setSalenum(Integer salenum) {
+        this.salenum = salenum;
+    }
+
+    public Double getCustome_score() {
+        return custome_score;
+    }
+
+    public void setCustome_score(Double custome_score) {
+        this.custome_score = custome_score;
+    }
+
+    public String getRecommend() {
+        return recommend;
+    }
+
+    public void setRecommend(String recommend) {
+        this.recommend = recommend;
+    }
+
+    public String getMessages() {
+        return messages;
+    }
+
+    public void setMessages(String messages) {
+        this.messages = messages;
+    }
+
+    public String getAuthor_msg() {
+        return author_msg;
+    }
+
+    public void setAuthor_msg(String author_msg) {
+        this.author_msg = author_msg;
+    }
+
+    public String getList() {
+        return list;
+    }
+
+    public void setList(String list) {
+        this.list = list;
+    }
+
+    public String getMedia_comment() {
+        return media_comment;
+    }
+
+    public void setMedia_comment(String media_comment) {
+        this.media_comment = media_comment;
+    }
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }
+
+    public String getSeries_name() {
+        return series_name;
+    }
+
+    public void setSeries_name(String series_name) {
+        this.series_name = series_name;
+    }
+
+    public Double getDangprice() {
+        return Dangprice;
+    }
+
+    public void setDangprice(Double dangprice) {
+        Dangprice = dangprice;
+    }
+
+    public String getProduct_image() {
+        return product_image;
+    }
+
+    public void setProduct_image(String product_image) {
+        this.product_image = product_image;
+    }
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                INDEX VERSION 1.3  †y VF:/Zuoye1/.metadata/.plugins/org.eclipse.wst.jsdt.core/libraries/baseBrowserLibrary.js  v "length/HTMLSelectElement/Number/        length/HTMLFormElement/Number/       width/HTMLPreElement/Number/        width/HTMLImageElement/Number/       %disabled/HTMLButtonElement/Boolean/       )form/HTMLButtonElement/HTMLFormElement/       +form/HTMLTextAreaElement/HTMLFormElement/       (form/HTMLInputElement/HTMLFormElement/       )form/HTMLOptionElement/HTMLFormElement/       )form/HTMLSelectElement/HTMLFormElement/       *form/HTMLIsIndexElement/HTMLFormElement/       (form/HTMLLabelElement/HTMLFormElement/       +form/HTMLFieldSetElement/HTMLFormElement/       )form/HTMLLegendElement/HTMLFormElement/       )form/HTMLObjectElement/HTMLFormElement/       'disabled/HTMLTextAreaElement/Boolean/       $disabled/HTMLInputElement/Boolean/       *defaultChecked/HTMLInputElement/Boolean/       %disabled/HTMLOptionElement/Boolean/       ,defaultSelected/HTMLOptionElement/Boolean/       'disabled/HTMLOptGroupElement/Boolean/       %disabled/HTMLSelectElement/Boolean/       $disabled/HTMLStyleElement/Boolean/       #disabled/HTMLLinkElement/Boolean/       $declare/HTMLObjectElement/Boolean/       publicId/Entity/String/       !index/HTMLOptionElement/Number/       data/CharacterData/String/       +cells/HTMLTableRowElement/HTMLCollection/       rev/HTMLLinkElement/String/       rel/HTMLLinkElement/String/       rel/HTMLAnchorElement/String/       rev/HTMLAnchorElement/String/       styleSheets/Document/Array/        rules/HTMLTableElement/String/       (rows/HTMLTableSelectionElement/String/       "rows/HTMLFrameSetElement/String/       $tabIndex/HTMLButtonElement/Number/       &tabIndex/HTMLTextAreaElement/Number/       attributes/Node/NamedNodeMap/       #tabIndex/HTMLInputElement/Number/       DOCUMENT_NODE/Node/Number/      !DOCUMENT_TYPE_NODE/Node/Number/      %DOCUMENT_FRAGMENT_NODE/Node/Number/      $tabIndex/HTMLSelectElement/Number/       referrer/HTMLDocument/String/       $tabIndex/HTMLAnchorElement/Number/       $tabIndex/HTMLObjectElement/Number/       "tabIndex/HTMLAreaElement/Number/       $maxLenght/HTMLInputElement/Number/        body/HTMLDocument/HTMLElement/       )DOMSTRING_SIZE_ERR/DOMException/Number/      length/NodeList/Number/       *defaultValue/HTMLTextAreaElement/String/       'defaultValue/HTMLInputElement/String/       dir/HTMLElement/String/       !dateTime/HTMLModElement/String/        data/HTMLObjectElement/String/       !defer/HTMLScriptElement/String/       3tHead/HTMLTableElement/HTMLTableSelectionElement/       'rows/HTMLTableElement/HTMLCollection/       3tFoot/HTMLTableElement/HTMLTableSelectionElement/       #value/HTMLTextAreaElement/String/        value/HTMLInputElement/String/       !value/HTMLOptionElement/String/       !value/HTMLSelectElement/String/       vLink/HTMLBodyElement/String/       firstChild/Node/Node/       !version/HTMLHtmlElement/String/       domain/HTMLDocument/String/       systemId/DocumentType/String/       !value/HTMLButtonElement/String/        value/HTMLParamElement/String/       $valueType/HTMLParamElement/String/       "object/HTMLAppletElement/String/       *vAlign/HTMLTableSelectionElement/String/       $vAlign/HTMLTableColElement/String/       $vAlign/HTMLTableRowElement/String/       %vAlign/HTMLTableCellElement/String/        doctype/Document/DocumentType/       ATTRIBUTE_NODE/Node/Number/      ,HIERARCHY_REQUEST_ERR/DOMException/Number/      href/HTMLBaseElement/String/       #httpEquiv/HTMLMetaElement/String/       "hreflang/HTMLLinkElement/String/       href/HTMLLinkElement/String/       "htmlFor/HTMLLabelElement/String/        href/HTMLAnchorElement/String/       $hreflang/HTMLAnchorElement/String/       "height/HTMLObjectElement/String/       !hight/HTMLAppletElement/String/       href/HTMLAreaElement/String/       #htmlFor/HTMLScriptElement/String/       &headers/HTMLTableCellElement/String/       %height/HTMLTableCellElement/String/       "height/HTMLIFrameElement/String/       nodeName/Node/String/       nodeValue/Node/String/       %selected/HTMLOptionElement/Boolean/       namespaceURI/Node/String/       %accessKey/HTMLButtonElement/String/       'accessKey/HTMLTextAreaElement/String/       alt/HTMLInputElement/String/        align/HTMLInputElement/String/       $accessKey/HTMLInputElement/String/       !accept/HTMLInputElement/String/       aLink/HTMLBodyElement/String/        action/HTMLFormElement/String/       'acceptCharset/HTMLFormElement/String/       $accessKey/HTMLLabelElement/String/       %accessKey/HTMLLegendElement/String/       !align/HTMLLegendElement/String/       align/HTMLDivElement/String/       $align/HTMLParagraphElement/String/       "align/HTMLHeadingElement/String/        align/HTMLQuoteElement/String/       align/HTMLHRElement/String/       %accessKey/HTMLAnchorElement/String/        align/HTMLImageElement/String/       alt/HTMLImageElement/String/       !align/HTMLObjectElement/String/       !label/HTMLOptionElement/String/       #label/HTMLOptGroupElement/String/       link/HTMLBodyElement/String/       lang/HTMLElement/String/       #longDesc/HTMLImageElement/String/       #longDesc/HTMLFrameElement/String/       $longDesc/HTMLIFrameElement/String/       #archive/HTMLObjectElement/String/       !align/HTMLAppletElement/String/       alt/HTMLAppletElement/String/       #archive/HTMLAppletElement/String/       #accessKey/HTMLAreaElement/String/       alt/HTMLAreaElement/String/        align/HTMLTableElement/String/       'align/HTMLTableCaptionElement/String/       )align/HTMLTableSelectionElement/String/       #lastModified/HTMLDocument/String/       #align/HTMLTableColElement/String/       #align/HTMLTableRowElement/String/       #abbr/HTMLTableCellElement/String/       $align/HTMLTableCellElement/String/       #axis/HTMLTableCellElement/String/       !align/HTMLIFrameElement/String/       src/HTMLInputElement/String/        scheme/HTMLMetaElement/String/       size/HTMLHRElement/String/       !shape/HTMLAnchorElement/String/       src/HTMLImageElement/String/       #standby/HTMLObjectElement/String/       shape/HTMLAreaElement/String/       src/HTMLScriptElement/String/       "summary/HTMLTableElement/String/       $scope/HTMLTableCellElement/String/       &length/HTMLOptionsCollection/Number/       length/HTMLCollection/Number/       $scrolling/HTMLFrameElement/String/       src/HTMLFrameElement/String/       %scrolling/HTMLIFrameElement/String/       src/HTMLIFrameElement/String/       nextSibling/Node/Node/       %entities/DocumentType/NamedNodeMap/       !isMap/HTMLImageElement/Boolean/       !SYNTAX_ERR/DOMException/Number/      "cols/HTMLTextAreaElement/Number/       ,implementation/Document/DOMImplementation/       (cellIndex/HTMLTableCellElement/Number/       &colSpan/HTMLTableCellElement/Number/       defaultView/Document/Window/       ENTITY_NODE/Node/Number/      $ENTITY_REFERENCE_NODE/Node/Number/      ELEMENT_NODE/Node/Number/      1contentDocument/HTMLObjectElement/HTMLDocument/       0contentDocument/HTMLFrameElement/HTMLDocument/       publicId/DocumentType/String/       1contentDocument/HTMLIFrameElement/HTMLDocument/       notationName/Entity/String/       %multiple/HTMLSelectElement/Boolean/       *PROCESSING_INSTRUCTION_NODE/Node/Number/      )WRONG_DOCUMENT_ERR/DOMException/Number/      %internalSubset/DocumentType/String/       2options/HTMLSelectElement/HTMLOptionsCollection/       width/HTMLHRElement/String/       !width/HTMLObjectElement/String/       !width/HTMLAppletElement/String/        width/HTMLTableElement/String/       #width/HTMLTableColElement/String/       $width/HTMLTableCellElement/String/       !width/HTMLIFrameElement/String/       specified/Attr/Boolean/       &anchors/HTMLDocument/HTMLCollection/       &applets/HTMLDocument/HTMLCollection/       &areas/HTMLMapElement/HTMLCollection/       !enctype/HTMLFormElement/String/       childNodes/Node/NodeList/       !event/HTMLScriptElement/String/       3caption/HTMLTableElement/HTMLTableCaptionElement/       #prompt/HTMLIsIndexElement/String/       !profile/HTMLHeadElement/String/       $links/HTMLDocument/HTMLCollection/       TEXT_NODE/Node/Number/      (INVALID_STATE_ERR/DOMException/Number/      *INUSE_ATTRIBUTE_ERR/DOMException/Number/      ,INVALID_CHARACTER_ERR/DOMException/Number/      %INDEX_SIZE_ERR/DOMException/Number/      .INVALID_MODIFICATION_ER/DOMException/Number/      )INVALID_ACCESS_ERR/DOMException/Number/      id/HTMLElement/String/       innerHTML/HTMLElement/String/       $data/ProcessingInstruction/String/       !bgColor/HTMLBodyElement/String/       $background/HTMLBodyElement/String/       !border/HTMLImageElement/String/       "border/HTMLObjectElement/String/       "bgColor/HTMLTableElement/String/       !border/HTMLTableElement/String/       %bgColor/HTMLTableRowElement/String/       &bgColor/HTMLTableCellElement/String/       "type/HTMLTextAreaElement/String/       type/HTMLInputElement/String/        text/HTMLOptionElement/String/        type/HTMLSelectElement/String/       text/HTMLBodyElement/String/       type/HTMLStyleElement/String/        target/HTMLFormElement/String/        target/HTMLBaseElement/String/       text/HTMLTitleElement/String/       type/HTMLLinkElement/String/        target/HTMLLinkElement/String/       title/HTMLElement/String/       tagName/Element/String/        media/HTMLStyleElement/String/        method/HTMLFormElement/String/       media/HTMLLinkElement/String/       'marginHeight/HTMLFrameElement/String/       &marginWidth/HTMLFrameElement/String/       (marginHeight/HTMLIFrameElement/String/       'marginWidth/HTMLIFrameElement/String/        type/HTMLButtonElement/String/       title/HTMLDocument/String/       type/HTMLUListElement/String/       type/HTMLOListElement/String/       type/HTMLLIElement/String/       "target/HTMLAnchorElement/String/        type/HTMLAnchorElement/String/        type/HTMLObjectElement/String/       type/HTMLParamElement/String/        target/HTMLAreaElement/String/        text/HTMLScriptElement/String/        type/HTMLScriptElement/String/       name/Attr/String/       "face/HTMLBaseFontElement/String/       face/HTMLFontElement/String/        frame/HTMLTableElement/String/       &frameBorder/HTMLFrameElement/String/       'frameBorder/HTMLIFrameElement/String/       systemId/Notation/String/       "rows/HTMLTextAreaElement/Number/       &rowIndex/HTMLTableRowElement/Number/       &rowSpan/HTMLTableCellElement/Number/       localName/Node/String/       *elements/HTMLFormElement/HTMLCollection/       value/HTMLLIElement/Number/       !vspace/HTMLImageElement/Number/       "vspace/HTMLObjectElement/Number/       "vspace/HTMLAppletElement/Number/       ownerElement/Attr/Element/       #checked/HTMLInputElement/Boolean/       #compact/HTMLUListElement/Boolean/       #compact/HTMLOListElement/Boolean/       #compact/HTMLDListElement/Boolean/       'compact/HTMLDirectoryElement/Boolean/       "compact/HTMLMenuElement/Boolean/       "offsetHeight/HTMLElement/Number/       !offsetWidth/HTMLElement/Number/        offsetLeft/HTMLElement/Number/       offsetTop/HTMLElement/Number/       'documentElement/Document/HTMLElement/       %images/HTMLDocument/HTMLCollection/        noShade/HTMLHRElement/Boolean/       !noHref/HTMLAreaElement/Boolean/       &notations/DocumentType/NamedNodeMap/       &noWrap/HTMLTableCellElement/Boolean/       $noResize/HTMLFrameElement/Boolean/       "ownerDocument/Node/HTMLDocument/       !height/HTMLImageElement/Number/       !hspace/HTMLImageElement/Number/       "hspace/HTMLObjectElement/Number/       "hspace/HTMLAppletElement/Number/       'offsetParent/HTMLElement/HTMLElement/       *tBodies/HTMLTableElement/HTMLCollection/       nodeType/Node/Number/       code/DOMException/Number/       size/HTMLInputElement/Number/        size/HTMLSelectElement/Number/       )selectedIndex/HTMLSelectElement/Number/       "scrollHeight/HTMLElement/Number/       !scrollWidth/HTMLElement/Number/        scrollLeft/HTMLElement/Number/       scrollTop/HTMLElement/Number/       systemId/Entity/String/        start/HTMLOListElement/Number/       "size/HTMLBaseFontElement/Number/       size/HTMLFontElement/Number/       !CDATA_SECTION_NODE/Node/Number/      COMMENT_NODE/Node/Number/      "span/HTMLTableColElement/Number/       -sectionRowIndex/HTMLTableRowElement/Number/       name/DocumentType/String/       $forms/HTMLDocument/HTMLCollection/       prefix/Node/String/       NOTATION_NODE/Node/Number/      lastChild/Node/Node/       value/Attr/String/       !content/HTMLMetaElement/String/       publicId/Notation/String/       !charset/HTMLLinkElement/String/       className/HTMLElement/String/       clear/HTMLBRElement/String/       #color/HTMLBaseFontElement/String/       color/HTMLFontElement/String/       cite/HTMLModElement/String/       #charset/HTMLAnchorElement/String/       "coords/HTMLAnchorElement/String/        code/HTMLObjectElement/String/       $codeBase/HTMLObjectElement/String/       $codeType/HTMLObjectElement/String/        code/HTMLAppletElement/String/       $codeBase/HTMLAppletElement/String/        coords/HTMLAreaElement/String/       cookie/HTMLDocument/String/       #charset/HTMLScriptElement/String/       &cellPadding/HTMLTableElement/String/       &cellSpacing/HTMLTableElement/String/       &ch/HTMLTableSelectionElement/String/        name/HTMLButtonElement/String/       "name/HTMLTextAreaElement/String/       name/HTMLInputElement/String/        name/HTMLSelectElement/String/       name/HTMLFormElement/String/       name/HTMLMetaElement/String/        name/HTMLAnchorElement/String/       name/HTMLImageElement/String/        name/HTMLObjectElement/String/       name/HTMLParamElement/String/        name/HTMLAppletElement/String/       name/HTMLMapElement/String/       name/HTMLFrameElement/String/        name/HTMLIFrameElement/String/       #style/HTMLElement/CSS2Properties/       )chOff/HTMLTableSelectionElement/String/       previousSibling/Node/Node/        ch/HTMLTableColElement/String/       #chOff/HTMLTableColElement/String/        ch/HTMLTableRowElement/String/       #chOff/HTMLTableRowElement/String/       !ch/HTMLTableCellElement/String/       $chOff/HTMLTableCellElement/String/       "cols/HTMLFrameSetElement/String/       &target/ProcessingInstruction/String/       !useMap/HTMLInputElement/String/       !useMap/HTMLImageElement/String/       "useMap/HTMLObjectElement/String/       $NAMESPACE_ERR/DOMException/Number/      (NOT_SUPPORTED_ERR/DOMException/Number/      $NOT_FOUND_ERR/DOMException/Number/      2NO_MODIFICATION_ALLOWED_ERR/DOMException/Number/      )NO_DATA_ALLOWED_ER/DOMException/Number/      length/CharacterData/Number/       parentNode/Node/Node/       URL/HTMLDocument/String/       'readOnly/HTMLTextAreaElement/Boolean/       $readOnly/HTMLInputElement/Boolean/       length/NamedNodeMap/Number/         ` hasChildNodes///Boolean/Node/       hasAttributes///Boolean/Node/       6insertRow/Number/index/HTMLElement/HTMLTableElement/       /createEvent/String/eventType/Object/Document/       *getAttribute/String/name/String/Element/       EgetAttributeNS/String,String/namespaceURI,localName/String/Element/       LcreateElementNS/String,String/namespaceURI,qualifiedName/Element/Document/       5createDocumentFragment///DocumentFragment/Document/       0createElement/String/tagName/Element/Document/       +createTextNode/String/data/Text/Document/       -createComment/String/data/Comment/Document/       +removeAttribute/String/name/void/Element/       FremoveAttributeNS/String,String/namespaceURI,localName/void/Element/        submit///void/HTMLFormElement/       :importNode/Node,Boolean/importedNode,deep/Node/Document/       open///void/HTMLDocument/       &item/Number/index/Node/NamedNodeMap/       'namedItem//index/Node/HTMLCollection/       9detachEvent/String,Function/type,listener/void/Element/       #cloneNode/Boolean/deep/Node/Node/       4insertCell//index/HTMLElement/HTMLTableRowElement/       $select///void/HTMLTextAreaElement/       9isSupported/String,String/feature,version/Boolean/Node/       3getElementById/String/elementId/Element/Document/       /setAttributeNodeNS/Attr/newAttr/Attr/Element/       -setAttributeNode/Attr/newAttr/Attr/Element/       !select///void/HTMLInputElement/       (writeln/String/text/void/HTMLDocument/       &write/String/text/void/HTMLDocument/       PgetElementsByTagNameNS/String,String/namespaceURI,localName/NodeList/Document/       8getElementsByTagName/String/tagname/NodeList/Document/       .add/,/element,before/void/HTMLSelectElement/       =createEntityReference/String/name/EntityReference/Document/       .namedItem//index/Node/HTMLOptionsCollection/       jcreateDocument/String,String,DocumentType/namespaceURI,qualifiedName,doctype/Document/DOMImplementation/       icreateDocumentType/String,String,String/qualifiedName,publicId,systemId/DocumentType/DOMImplementation/       "blur///void/HTMLTextAreaElement/       /createCaption///HTMLElement/HTMLTableElement/       -createTFoot///HTMLElement/HTMLTableElement/       -createTHead///HTMLElement/HTMLTableElement/       5replaceChild/Node,Node/newChild,oldChild/Node/Node/       &removeChild/Node/oldChild/Node/Node/       blur///void/HTMLInputElement/       8deleteRow/Number/index/void/HTMLTableSelectionElement/       <addEventListener/,,/type,listener,useCapture/void/Element/       9attachEvent/String,Function/type,listener/void/Element/       ;deleteData/Number,Number/offset,count/void/CharacterData/        blur///void/HTMLSelectElement/       5setAttribute/String,String/name,value/void/Element/       TsetAttributeNS/String,String,String/namespaceURI,qualifiedName,value/void/Element/       #focus///void/HTMLTextAreaElement/       KremoveNamedItemNS/String,String/namespaceURI,localName/Node/NamedNodeMap/       /deleteRow/Number/index/void/HTMLTableElement/       reset///void/HTMLFormElement/       (deleteCaption///void/HTMLTableElement/       &deleteTFoot///void/HTMLTableElement/       &deleteTHead///void/HTMLTableElement/       0removeNamedItem/String/name/Node/NamedNodeMap/       GreplaceData/Number,Number,String/offset,count,arg/void/CharacterData/        focus///void/HTMLInputElement/       -dispatchEvent/Object/event/Boolean/Element/       HgetNamedItemNS/String,String/namespaceURI,localName/Node/NamedNodeMap/       'getNamedItem//name/Node/NamedNodeMap/        click///void/HTMLInputElement/       $splitText/Number/offset/Text/Text/       "item//index/Node/HTMLCollection/       close///void/HTMLDocument/       normalize///void/Node/        blur///void/HTMLAnchorElement/       item//index/Node/NodeList/       3deleteCell/Number/index/void/HTMLTableRowElement/       OgetElementsByTagNameNS/String,String/namespaceURI,localName/NodeList/Element/       4getElementsByTagName/String/name/NodeList/Element/       &appendChild/Node/newChild/Node/Node/       KcreateAttributeNS/String,String/namespaceURI,qualifiedName/Attr/Document/       ,createAttribute/String/name/Attr/Document/       +appendData/String/arg/void/CharacterData/       !focus///void/HTMLSelectElement/       EhasFeature/String,String/feature,version/Boolean/DOMImplementation/       0removeAttributeNode/Attr/oldAttr/Attr/Element/       ,setNamedItemNS/Node/arg/Node/NamedNodeMap/       *setNamedItem/Node/arg/Node/NamedNodeMap/       FhasAttributeNS/String,String/namespaceURI,localName/Boolean/Element/       +hasAttribute/String/name/Boolean/Element/       4substringData/,/offset,count/String/CharacterData/       )item//index/Node/HTMLOptionsCollection/       ,getAttributeNode/String/name/Attr/Element/       =getElementsByName/String/elementName/NodeList/HTMLDocument/       GgetAttributeNodeNS/String,String/namespaceURI,localName/Attr/Element/       9insertRow//index/HTMLElement/HTMLTableSelectionElement/       !focus///void/HTMLAnchorElement/       -insertBefore/,/newChild,refChild/Node/Node/       -remove/Number/index/void/HTMLSelectElement/       9insertData/Number,String/offset,arg/void/CharacterData/       7createCDATASection/String/data/CDATASection/Document/       WcreateProcessingInstruction/String,String/target,data/ProcessingInstruction/Document/        l createAttributeNS     HTMLHRElement     HTMLLabelElement     HTMLFontElement     DOCUMENT_NODE     implementation     rules     defaultChecked     getElementsByTagNameNS     INVALID_ACCESS_ERR     Image     	cloneNode     createEntityReference     HTMLFrameSetElement     ENTITY_NODE     bgColor     marginWidth     
+offsetLeft     rowSpan     HTMLFormElement     text     HTMLBaseFontElement     offsetHeight     HTMLStyleElement     hasAttribute     options     noHref     type     hight     URL     areas     HTMLUListElement     HTMLOListElement     defaultValue     HTMLDListElement     NOTATION_NODE     blur     HTMLAppletElement     reset     appendChild     shape     setNamedItemNS     tagName     codeType     deleteTHead     CharacterData     checked     focus     headers     span     NOT_FOUND_ERR     INVALID_MODIFICATION_ER     HTMLParagraphElement     sectionRowIndex     item     chOff     
+childNodes     	accessKey     HTMLAnchorElement     alt     	specified     substringData     ownerDocument     setAttributeNodeNS     getAttributeNS     HTMLObjectElement     removeAttributeNode     HTMLAreaElement     cite     contentDocument     INVALID_CHARACTER_ERR     height     Number     HTMLLIElement     tabIndex     colSpan     frame     deleteCaption     PROCESSING_INSTRUCTION_NODE     NOT_SUPPORTED_ERR     
+importNode     prefix     replaceChild     cellPadding     summary     addEventListener     open     elements     charset     hasAttributeNS     style     axis     multiple     index     	valueType     attachEvent     name     action     offsetWidth     id     Comment     DOCUMENT_TYPE_NODE     createDocumentFragment     Node     	notations     NO_DATA_ALLOWED_ER     Option     HTMLLinkElement     DOMImplementation     	offsetTop     internalSubset     INUSE_ATTRIBUTE_ERR     doctype     Object     label     disabled     CDATA_SECTION_NODE     nextSibling     HTMLPreElement     HTMLMenuElement     content     links     NAMESPACE_ERR     HTMLBaseElement     color     insertBefore     add     ProcessingInstruction     profile     createDocument     abbr     
+SYNTAX_ERR     selectedIndex     HTMLTableElement     previousSibling     styleSheets     offsetParent     createTHead     HTMLSelectElement     HTMLTableCaptionElement     getNamedItemNS     HTMLMetaElement     rel     declare     ELEMENT_NODE     Window     removeNamedItem     
+deleteCell     createProcessingInstruction     code     	localName     notationName     lastModified     getAttributeNode     compact     vLink     select     HTMLScriptElement     object     images     NO_MODIFICATION_ALLOWED_ERR     	namedItem     DocumentType     detachEvent     domain     getElementsByTagName     
+hasFeature     removeAttribute     HTMLTitleElement     DOMSTRING_SIZE_ERR     INVALID_STATE_ERR     method     remove     form     
+attributes     align     	maxLenght     prompt     archive     getElementById     HTMLOptionElement     Text     referrer     createAttribute     hasAttributes     hreflang     src     HTMLHeadElement     replaceData     scrollHeight     HTMLIsIndexElement     tBodies     Document     entities     scrollWidth     createEvent     	innerHTML     	insertRow     INDEX_SIZE_ERR     tFoot     	nodeValue     createElement     EventTarget     createElementNS     COMMENT_NODE     marginHeight     selected     close     value     deleteTFoot     ENTITY_REFERENCE_NODE     HTMLCollection     
+deleteData     acceptCharset     	normalize     version     	className     	httpEquiv     dir     documentElement     cells     writeln     applets     HTMLTableSelectionElement     getAttribute     HTMLHtmlElement     WRONG_DOCUMENT_ERR     Entity     HTMLOptionsCollection     coords     useMap     	scrolling     	deleteRow     rowIndex     HTMLIFrameElement     submit     noShade     tHead     HTMLImageElement     face     HTMLHeadingElement     start     getAttributeNodeNS     setAttribute     event     	cellIndex     defaultView     
+insertCell     
+scrollLeft     createComment     CSS2Properties     aLink     Function     nodeName     longDesc     HTMLQuoteElement     DOCUMENT_FRAGMENT_NODE     noWrap     HTMLTableCellElement     Boolean     HTMLMapElement     hspace     DOMException     Attr     HTMLBRElement     NamedNodeMap     standby     dispatchEvent     HTMLBodyElement     click     cookie     write     HTMLFieldSetElement     void     defaultSelected     hasChildNodes     Element     String     	lastChild     isSupported     NodeList     removeChild     noResize     defer     size     systemId     dateTime     
+background     HTMLDivElement     scope     width     readOnly     enctype     HTMLTableRowElement     title     Array     forms     HTMLFrameElement     
+parentNode     HTMLTableColElement     lang     DocumentFragment     vspace     href     createTextNode     HTMLModElement     
+insertData     body     media     EntityReference     createTFoot     createCaption     getElementsByName     HTMLButtonElement     link     	scrollTop     HTMLDocument     vAlign     cellSpacing     ATTRIBUTE_NODE     HTMLOptGroupElement     HTMLTextAreaElement     createCDATASection     publicId     rev     clear     border     getNamedItem     HIERARCHY_REQUEST_ERR     htmlFor     setAttributeNS     ownerElement     HTMLDirectoryElement     HTMLInputElement     data     	TEXT_NODE     nodeType     
+appendData     codeBase     CDATASection     namespaceURI     removeNamedItemNS     cols     setAttributeNode     HTMLParamElement     
+firstChild     scheme     	splitText     Notation     frameBorder     setNamedItem     HTMLLegendElement     caption     removeAttributeNS     length     accept     HTMLElement     rows     	prototype     isMap     ch     target     createDocumentType     anchors        DOMImplementation////       Object////       HTMLDocument////       Document////       EventTarget////       NamedNodeMap////       CharacterData////       HTMLImageElement////       
+Node////       HTMLOptionElement////       HTMLTableCaptionElement////       DocumentType////       CSS2Properties////       Element////       Comment////       ProcessingInstruction////       HTMLTableSelectionElement////       HTMLCollection////       EntityReference////       HTMLOptionsCollection////       DocumentFragment////       HTMLFormElement////       
+Attr////       HTMLElement////       NodeList////       Array////       Window////       
+Text////         M HTMLLinkElement////       HTMLDirectoryElement////       HTMLDListElement////       HTMLOListElement////       HTMLUListElement////       HTMLInputElement////       HTMLOptGroupElement////       HTMLMetaElement////       HTMLBaseElement////       HTMLFormElement////       HTMLTitleElement////       Notation////       HTMLMenuElement////       HTMLParagraphElement////       HTMLHeadingElement////       HTMLQuoteElement////       HTMLPreElement////       
+Attr////       HTMLBaseFontElement////       HTMLFontElement////       HTMLModElement////       2Option//,,,/text,value,defaultSelected,selected/       HTMLAnchorElement////       ProcessingInstruction////       HTMLAppletElement////       HTMLDocument////       HTMLMapElement////       HTMLAreaElement////       HTMLScriptElement////       HTMLTableElement////       DocumentFragment////       HTMLTableCaptionElement////       HTMLTableSelectionElement////       HTMLTableColElement////       HTMLTableRowElement////       HTMLTableCellElement////       HTMLFrameSetElement////       HTMLFrameElement////       HTMLIFrameElement////       HTMLCollection////       HTMLOptionsCollection////       Comment////       CharacterData////       Element////       Entity////       NodeList////       NamedNodeMap////       
+Text////       Document////       CDATASection////       DOMException////       EntityReference////       HTMLBRElement////       DocumentType////       
+Node////       HTMLHRElement////       HTMLLIElement////       HTMLElement////       CSS2Properties////       DOMImplementation////       $Image//Number,Number/width,height/       HTMLHeadElement////       HTMLParamElement////       HTMLSelectElement////       HTMLBodyElement////       HTMLFieldSetElement////       HTMLLabelElement////       HTMLTextAreaElement////       HTMLIsIndexElement////       HTMLDivElement////       HTMLImageElement////       HTMLObjectElement////       HTMLStyleElement////       HTMLHtmlElement////       HTMLLegendElement////       HTMLButtonElement////       HTMLOptionElement////         M CharacterData//Node/       !HTMLAnchorElement//HTMLElement/        HTMLImageElement//HTMLElement/       !HTMLObjectElement//HTMLElement/        HTMLParamElement//HTMLElement/       !HTMLAppletElement//HTMLElement/       HTMLMapElement//HTMLElement/       HTMLAreaElement//HTMLElement/       !HTMLScriptElement//HTMLElement/        HTMLTableElement//HTMLElement/       'HTMLTableCaptionElement//HTMLElement/       )HTMLTableSelectionElement//HTMLElement/       #HTMLTableColElement//HTMLElement/       #HTMLTableRowElement//HTMLElement/       $HTMLTableCellElement//HTMLElement/       #HTMLFrameSetElement//HTMLElement/        HTMLFrameElement//HTMLElement/       !HTMLIFrameElement//HTMLElement/       NodeList//Object/       Notation//Node/       NamedNodeMap//Object/       EntityReference//Node/       Attr//Node/       $HTMLDirectoryElement//HTMLElement/        HTMLDListElement//HTMLElement/        HTMLOListElement//HTMLElement/        HTMLUListElement//HTMLElement/       !HTMLLegendElement//HTMLElement/       #HTMLFieldSetElement//HTMLElement/        HTMLLabelElement//HTMLElement/       !HTMLButtonElement//HTMLElement/       Node//EventTarget/       #HTMLTextAreaElement//HTMLElement/        HTMLInputElement//HTMLElement/       CSS2Properties//Object/       !HTMLOptionElement//HTMLElement/       #HTMLOptGroupElement//HTMLElement/       DocumentType//Node/       !HTMLSelectElement//HTMLElement/       HTMLBodyElement//HTMLElement/        HTMLStyleElement//HTMLElement/       HTMLFormElement//HTMLElement/       "HTMLIsIndexElement//HTMLElement/       HTMLBaseElement//HTMLElement/       Option//HTMLOptionElement/       HTMLMetaElement//HTMLElement/        HTMLTitleElement//HTMLElement/       HTMLCollection//Object/        HTMLOptionsCollection//Object/       HTMLLinkElement//HTMLElement/       HTMLHeadElement//HTMLElement/       Text//CharacterData/       CDATASection//Text/       HTMLDocument//Document/       ProcessingInstruction//Node/       DocumentFragment//Node/       Document//Node/       Comment//CharacterData/       Entity//Node/       Image//HTMLImageElement/       HTMLElement//Element/       DOMException//Object/       DOMImplementation//Object/       Element//Node/       HTMLHtmlElement//HTMLElement/       HTMLMenuElement//HTMLElement/       HTMLLIElement//HTMLElement/       HTMLDivElement//HTMLElement/       $HTMLParagraphElement//HTMLElement/       "HTMLHeadingElement//HTMLElement/        HTMLQuoteElement//HTMLElement/       HTMLPreElement//HTMLElement/       HTMLBRElement//HTMLElement/       #HTMLBaseFontElement//HTMLElement/       HTMLFontElement//HTMLElement/       HTMLHRElement//HTMLElement/       HTMLModElement//HTMLElement/         M HTMLElement/HTMLSelectElement     	Node/Attr     Node/Document     CharacterData/Text     HTMLElement/HTMLLIElement     HTMLElement/HTMLLegendElement     HTMLElement/HTMLDListElement     HTMLElement/HTMLOListElement     HTMLElement/HTMLUListElement     Node/Notation     Object/CSS2Properties     HTMLElement/HTMLAnchorElement     Node/Entity     HTMLElement/HTMLAppletElement     HTMLElement/HTMLTableColElement     HTMLElement/HTMLTableRowElement     HTMLElement/HTMLLabelElement     HTMLImageElement/Image     HTMLElement/HTMLScriptElement     Node/ProcessingInstruction     Node/Element     HTMLElement/HTMLButtonElement     CharacterData/Comment     HTMLElement/HTMLOptionElement     HTMLElement/HTMLHeadingElement     Object/NodeList     HTMLElement/HTMLBaseFontElement     HTMLElement/HTMLPreElement     Node/CharacterData     HTMLElement/HTMLModElement     HTMLElement/HTMLFieldSetElement     HTMLElement/HTMLIsIndexElement     Document/HTMLDocument     HTMLElement/HTMLTableElement     HTMLElement/HTMLDivElement     HTMLElement/HTMLQuoteElement     HTMLElement/HTMLOptGroupElement     Object/DOMImplementation     Object/HTMLCollection     HTMLElement/HTMLBaseElement     Node/DocumentType     Text/CDATASection     EventTarget/Node     HTMLElement/HTMLInputElement      HTMLElement/HTMLDirectoryElement     %HTMLElement/HTMLTableSelectionElement     Object/NamedNodeMap     HTMLElement/HTMLFontElement      HTMLElement/HTMLParagraphElement     HTMLElement/HTMLHtmlElement     HTMLElement/HTMLLinkElement     HTMLElement/HTMLFrameSetElement     #HTMLElement/HTMLTableCaptionElement     HTMLElement/HTMLFrameElement     HTMLElement/HTMLBodyElement     HTMLElement/HTMLStyleElement     HTMLElement/HTMLMetaElement     HTMLOptionElement/Option     HTMLElement/HTMLObjectElement     HTMLElement/HTMLHeadElement     HTMLElement/HTMLHRElement     Node/EntityReference     Object/DOMException     HTMLElement/HTMLMenuElement      HTMLElement/HTMLTableCellElement     Node/DocumentFragment     HTMLElement/HTMLTitleElement     HTMLElement/HTMLAreaElement     HTMLElement/HTMLBRElement     HTMLElement/HTMLFormElement     HTMLElement/HTMLMapElement     Element/HTMLElement     HTMLElement/HTMLImageElement     HTMLElement/HTMLTextAreaElement     HTMLElement/HTMLParamElement     Object/HTMLOptionsCollection     HTMLElement/HTMLIFrameElement             p    	fieldDecl   o 
+methodDecl  :Õ ref  O˜ constructorRef  g^ constructorDecl  j
+ typeDecl  rY superRef  }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              

@@ -1,0 +1,78 @@
+th: 100%;
+    position: relative;
+}
+
+.tabs-header-left .tabs li {
+    left: auto;
+    right: 0;
+    margin: 0 -1px 4px 0;
+    float: right;
+}
+
+.tabs-header-right .tabs li {
+    left: 0;
+    right: auto;
+    margin: 0 0 4px -1px;
+    float: left;
+}
+
+.tabs-header-left .tabs li a.tabs-inner {
+    display: block;
+    text-align: left;
+    -moz-border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+}
+
+.tabs-header-right .tabs li a.tabs-inner {
+    display: block;
+    text-align: left;
+    -moz-border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.tabs-panels-right {
+    float: right;
+    border-width: 1px 1px 1px 0;
+}
+
+.tabs-panels-left {
+    float: left;
+    border-width: 1px 0 1px 1px;
+}
+
+.tabs-header-noborder,
+.tabs-panels-noborder {
+    border: 0px;
+}
+
+.tabs-header-plain {
+    border: 0px;
+    background: transparent;
+}
+
+.tabs-scroller-left {
+    background: #f3f3f3 url('images/tabs_icons.png') no-repeat 1px center;
+}
+
+.tabs-scroller-right {
+    background: #f3f3f3 url('images/tabs_icons.png') no-repeat -15px center;
+}
+
+.tabs li a.tabs-close {
+    background: url('images/tabs_icons.png') no-repeat -34px center;
+}
+
+.tabs li a.tabs-inner:hover {
+    background: #e2e2e2;
+    color: #000000;
+    filter: none;
+}
+
+.tabs li.tabs-selected a.tabs-inner {
+    background-color: #ffffff;
+    color: #575765;
+    background: -webkit-linear-gradient(top, #F8F8F8 0, #ffffff 100%);
+    background: -moz-linear-gradient(top, #F8F8F8 0, #ffffff 100%);
+    background: -o-linear-gradient(top, #F8F8F8 0

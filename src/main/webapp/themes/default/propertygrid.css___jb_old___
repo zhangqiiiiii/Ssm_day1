@@ -1,0 +1,40 @@
+mageTransform.Microsoft.gradient(startColorstr=#4c4c4c,endColorstr=#3f3f3f,GradientType=0);
+}
+.datagrid-cell-rownumber {
+  color: #fff;
+}
+.datagrid-resize-proxy {
+  background: #cccccc;
+}
+.datagrid-mask {
+  background: #000;
+}
+.datagrid-mask-msg {
+  border-color: #000;
+}
+.datagrid-toolbar,
+.datagrid-pager {
+  background: #555;
+}
+.datagrid-header,
+.datagrid-toolbar,
+.datagrid-pager,
+.datagrid-footer-inner {
+  border-color: #222;
+}
+.datagrid-header td,
+.datagrid-body td,
+.datagrid-footer td {
+  border-color: #222;
+}
+.datagrid-htable,
+.datagrid-btable,
+.datagrid-ftable {
+  color: #fff;
+  border-collapse: separate;
+}
+.datagrid-row-alt {
+  background: #555;
+}
+.datagrid-row-over,
+.datagrid-header td.datagrid-head

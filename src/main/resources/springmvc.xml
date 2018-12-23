@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+
+    <!-- 自定义类型转化器 -->
+    <!--<bean id="myDateConverter" class="com.baizhi.spring.util.MyDateConverter">
+        <property name="pattern" value="yyyy-MM-dd HH:mm:ss"></property>
+    </bean>-->
+
+    <!-- 定义到类型转换工厂中 -->
+    <!--<bean class="org.springframework.format.support.FormattingConversionServiceFactoryBean" id="converterService">
+        <property name="converters">
+            <set>
+                <ref bean="myDateConverter"/>
+            </set>
+        </property>
+    </bean>-->
+
+    <!-- 通过mvc标签加载mvc相应的标签	 -->
+    <context:component-scan base-package="com.baizhi.controller" use-default-filters="false">
+        <context:include-filter type="annotation"
+                                expression="org.springframework.stereotype.Controller"></context:include-filter>
+    </context:component-scan>
+    <mvc:annotation-driven></mvc:annotation-driven>
+    <!--<mvc:default-servlet-handler />-->
+
+
+    <!--静态资源访问 -->
+    <!--<mvc:resources location="/js/" mapping="/js/**"/>
+    <mvc:resources location="/themes/" mapping="/themes/**"/>-->
+
+    <!-- 视图解析 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+    <!-- 验证码 -->
+    <!--<bean id="config" class="com.google.code.kaptcha.util.Config">
+        <constructor-arg>
+            <props>
+                <prop key="kaptcha.textproducer.char.length">3</prop>
+                &lt;!&ndash; <prop key="kaptcha.image.width">1000</prop> &ndash;&gt;
+            </props>
+        </constructor-arg>
+    </bean>
+    <bean class="com.google.code.kaptcha.impl.DefaultKaptcha" >
+        <property name="config" ref="config"></property>
+    </bean>-->
+
+    <!-- 配置拦截器 -->
+    <!--<mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/Ulogin.do"/>
+            <mvc:exclude-mapping path="/Uinsert.do"/>
+            <mvc:exclude-mapping path="/getkaptcha.do"/>
+            <bean class="com.baizhi.spring.util.MyInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>-->
+
+    <!-- 文件上传解析器 -->
+    <!--<bean class="org.springframework.web.multipart.commons.CommonsMultipartResolver"
+     id="multipartResolver"></bean>-->
+</beans>
